@@ -1,0 +1,34 @@
+URxvt
+=====
+
+Installation : apt-get install rxvt-unicode
+
+Files : .Xdefaults > ~/
+Perl scripts > /usr/lib/urxvt/perl/
+
+Scripts de lancement
+====================
+
+Login Manager LightDM ou GDM :
+/usr/share/xsessions/dwm.desktop
+
+Script lancé par dwm.desktop :
+~/.startdwm
+
+Conky lancé par le .startdwm :
+~/.conkyrc
+
+
+Simple color Script
+===================
+
+#!/bin/bash 
+setterm -regtabs 4
+COLS="$(xrdb -query| grep -Ei [.*]color[01-9] | sort -n -tr -k2 | tr -d [*[:blank:]])
+
+" echo -en "---------------------------------------------------------------"; 
+echo -e "\033[0m"
+for i in {0..7}; do echo -en "\e[0;3${i}m▉▉▉▉▉▉▉\t"; done; echo 
+for i in {0..7}; do echo -en "\e[0;9${i}m▉▉▉▉▉▉▉\t"; done; echo -e "\033[0m" 
+echo -en "---------------------------------------------------------------"; 
+echo -e "\033[0m"

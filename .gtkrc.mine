@@ -1,0 +1,16 @@
+style "user-font"
+{
+    font_name = "Deja Vu 9"
+}
+widget_class "*" style "user-font"
+
+gtk-font-name = "DejaVu 9"
+gtk-theme-name = "Greybird"
+gtk-icon-theme-name = "Faenza-Darkest"
+
+gtk-xft-dpi = 96 
+gtk-xft-antialias = 1 
+gtk-xft-hinting = 1
+gtk-xft-hintstyle = "hintslight" 
+gtk-xft-rgba = "rgb"
+gtk-xft-lcdfilter = "lcddefault"
