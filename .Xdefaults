@@ -2,39 +2,42 @@
 URxvt.font: xft:DejaVu Sans Mono:size=9
 URxvt.letterSpace: -2
 
-! Colors ------------------------------
+! Colors ==============================
 
-URxvt*background:       #170F0D
-URxvt*foreground:       #746C48
-URxvt*cursorColor:      #6666CC
-URxvt*colorBD:          #C8B984
+! Tango color palette
+URxvt*background: #2e3436
+URxvt*foreground: #eeeeec
+URxvt*cursorColor: #8ae234
+! foreground color for underline
+URxvt*colorUL: #8ae234
+! line color for underline
+URxvt*underlineColor: #92659a
+! black dark/light
+URxvt*color0: #2e3436
+URxvt*color8: #6e706b
+! red dark/light
+URxvt*color1: #cc0000
+URxvt*color9: #ef2929
+! green dark/light
+URxvt*color2: #4e9a06
+URxvt*color10: #8ae234
+! yellow dark/light
+URxvt*color3: #edd400
+URxvt*color11: #fce94f
+! blue dark/light
+URxvt*color4: #3465a4
+URxvt*color12: #729fcf
+! magenta dark/light
+URxvt*color5: #92659a
+URxvt*color13: #c19fbe
+! cyan dark/light
+URxvt*color6: #07c7ca
+URxvt*color14: #63e9e9
+! white dark/light
+URxvt*color7: #d3d7cf
+URxvt*color15: #eeeeec
 
-
-URxvt*color0:           #392925
-URxvt*color8:           #544B2E
-
-URxvt*color1:           #98724C
-URxvt*color9:           #AF652F
-
-URxvt*color2:           #908F32
-URxvt*color10:          #C3C13D
-
-URxvt*color3:           #AA964C
-URxvt*color11:          #C8B55B
-
-URxvt*color4:           #7B854E
-URxvt*color12:          #70A16C
-
-URxvt*color5:           #6B5644
-URxvt*color13:          #98724C
-
-URxvt*color6:           #5C5142
-URxvt*color14:          #778725
-
-URxvt*color7:           #C8B55B
-URxvt*color15:          #E4DC8C
-
----------------------------------------
+! ====================================
 
 !enabling clickable links:
 URxvt.urlLauncher:      /usr/bin/firefox
