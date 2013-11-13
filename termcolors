@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#setterm -regtabs 4
+COLS="$(xrdb -query| grep -Ei [.*]color[01-9] | sort -n -tr -k2  | tr -d [*[:blank:]])"
+
+echo -en "---------------------------------------------------------------";
+echo -e "\033[0m"
+for i in {0..7}; do echo -en "\e[0;3${i}m▉▉▉▉▉▉▉\t"; done; echo
+for i in {0..7}; do echo -en "\e[0;9${i}m▉▉▉▉▉▉▉\t"; done; echo -e "\033[0m"
+echo -en "---------------------------------------------------------------";
+echo -e "\033[0m"
+
+
