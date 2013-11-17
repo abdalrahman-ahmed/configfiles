@@ -1,12 +1,6 @@
 # -- THEME AUTO-WRITTEN BY gtk-theme-switch2 DO NOT EDIT
 include "/usr/share/themes/Greybird/gtk-2.0/gtkrc"
 
-style "user-font"
-{
-  font_name="Coda 9"
-}
-widget_class "*" style "user-font"
-
 include "/home/raphael/.gtkrc-2.0.mine"
 
 # -- THEME AUTO-WRITTEN BY gtk-theme-switch2 DO NOT EDIT

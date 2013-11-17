@@ -1,0 +1,9 @@
+gtk-theme-name = "Greybird"
+gtk-icon-theme-name = "Faenza-Darkest"
+style "schrift"
+{
+font_name = "Coda 9"
+}
+widget_class "*" style "schrift"
+gtk-font-name = "Coda 9"
+
