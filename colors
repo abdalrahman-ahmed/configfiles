@@ -23,6 +23,61 @@ urxvt.color15:      	#F6F6C9
 
 ===============================
 
+! PALE ========================
+
+*foreground: #696969
+*background: #fffef6
+*color0: #363636
+*color8: #424242
+*color1: #C37561
+*color9:  #D19485
+*color2: #A0A57E
+*color10: #7f8264
+*color3: #b58b62
+*color11: #DEBC9C
+*color4: #1d2b41
+*color12: #98A1B9
+*color5: #AB716D
+*color13: #b4d2c8
+*color6: #98B9B1
+*color14: #769293
+*color7: #9ba0a7
+*color15: #6e7383
+
+==============================
+
+! RETRO ======================
+
+URxvt.foreground: #D7D0C7
+URxvt.background: #151515
+! Black
+URxvt.color0: #303030
+URxvt.color8: #404040
+! Red
+URxvt.color1: #E84F4F
+URxvt.color9: #D23D3D
+! Green
+URxvt.color2: #B8D68C
+URxvt.color10: #A0CF5D
+! Yellow
+URxvt.color3: #E1AA5D
+URxvt.color11: #F39D21
+! Blue
+URxvt.color4: #7DC1CF
+URxvt.color12: #4E9FB1
+! Magenta
+URxvt.color5: #9B64FB
+URxvt.color13: #8542FF
+! Cyan
+URxvt.color6: #6D878D
+URxvt.color14: #42717B
+! White
+URxvt.color7: #dddddd
+URxvt.color15: #dddddd
+
+============================
+
+
 ! Autumn colors ===============
 
 URxvt*background:       #170F0D
@@ -56,6 +111,49 @@ URxvt*color7:           #C8B55B
 URxvt*color15:          #E4DC8C
 
 ===============================
+
+!baskerville-ivorylight
+
+*background:  #FEF9EC
+*foreground:  #6D727E
+
+*colorBD:     #3E424D
+*colorIT:     #3E424D
+*colorUL:     #3E424D
+
+*cursorColor: #007693
+
+! BLACK
+*color0:      #C5C1B4
+*color8:      #A1A6B2
+
+! WHITE
+*color7:      #3E424D
+*color15:     #282C36
+
+! RED
+*color1:      #E75C58
+*color9:      #B22B31
+
+! YELLOW
+*color3:      #A08A00
+*color11:     #715F00
+
+! GREEN
+*color2:      #00A250
+*color10:     #007427
+
+! CYAN
+*color6:      #00A4C1
+*color14:     #007693
+
+! BLUE
+*color4:      #208FFB
+*color12:     #0065CA
+
+! MAGENTA
+*color5:      #D160C4
+*color13:     #A03196
 
 
 Tango 2 =======================
