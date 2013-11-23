@@ -1,24 +1,27 @@
-URxvt
-=====
+===========================
+Various configuration files
+===========================
 
-Installation : apt-get install rxvt-unicode
+URxvt:
+  Installation : apt-get install rxvt-unicode
+  Files : .Xdefaults > ~/
+  Perl scripts > /usr/lib/urxvt/perl/
 
-Files : .Xdefaults > ~/
-Perl scripts > /usr/lib/urxvt/perl/
+Scripts de lancement:
+  Login Manager LightDM ou GDM :
+  /usr/share/xsessions/dwm.desktop
 
-Scripts de lancement
-====================
+  Script lancé par dwm.desktop :
+  ~/.startdwm
 
-Login Manager LightDM ou GDM :
-/usr/share/xsessions/dwm.desktop
+  Script lancé par wmfs.desktop
+  ~/.startwmfs
 
-Script lancé par dwm.desktop :
-~/.startdwm
+  shortcuts:
+  urxvtc -hold -e shortcuts &
+  keyboard shortcuts for dwm
 
-Fait appel au script 'shortcuts' par la ligne:
-urxvtc -hold -e shortcuts &
-
-Conky lancé par le .startdwm :
-~/.conkyrc
+Conky:
+  ~/.conkyrc
 
 
