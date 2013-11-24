@@ -8,10 +8,17 @@ Xdefaults for URxvt:
   Perl scripts > /usr/lib/urxvt/perl/
 
 colors:
-  color schemes for .Xdefaults
+  color schemes script for .Xdefaults
+  Put somewhere in PATH
+
+.bashrc
+  ~/.bashrc
 
 Conky:
   ~/.conkyrc
 
-GTK files
-  GTK files configurations
+GTK files configuration
+  ~/.gtk*
+
+Fonts configuration
+  ~/.config/fontconfig/.fonts.conf
