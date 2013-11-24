@@ -40,9 +40,7 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
+# uncomment for a colored prompt
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
@@ -85,17 +83,22 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # personnal aliases
+
 alias install='sudo apt-get install'
 alias prg='sudo apt-get purge'
 alias update='sudo apt-get update'
 alias search='apt-cache search'
 alias pol='apt-cache policy'
+
 alias ll='ls -alF'
 alias la='ls -A --group-directories-first'
 alias l='ls -CF --group-directories-first'
 alias da='date "+%A %d %B %Y [%T]"'
-# alias uzbl='uzbl-tabbed'
+
+alias bashrc='vim ~/.bashrc'
 alias wmfsrc='vim ~/.config/wmfs/wmfsrc'
+alias vimrc='vim .vimrc'
+alias feh='feh -d -. -B black'
 
 # /// notes ///
 

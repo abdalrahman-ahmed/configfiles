@@ -1,75 +1,92 @@
-! Fonts -------------------------------
+URxvt.perl-ext-common: default,clipboard
+
+! Fonts =======================
 URxvt.font: xft:DejaVu Sans Mono:size=9
-URxvt.letterSpace: -2
+URxvt.letterSpace: 	     -2
 
-! Colors ==============================
+! Colors ======================
 
-! Tango color palette
-URxvt*background: #2e3436
-URxvt*foreground: #eeeeec
-URxvt*cursorColor: #8ae234
-! foreground color for underline
-URxvt*colorUL: #8ae234
-! line color for underline
-URxvt*underlineColor: #92659a
-! black dark/light
-URxvt*color0: #2e3436
-URxvt*color8: #6e706b
-! red dark/light
-URxvt*color1: #cc0000
-URxvt*color9: #ef2929
-! green dark/light
-URxvt*color2: #4e9a06
-URxvt*color10: #8ae234
-! yellow dark/light
-URxvt*color3: #edd400
-URxvt*color11: #fce94f
-! blue dark/light
-URxvt*color4: #3465a4
-URxvt*color12: #729fcf
-! magenta dark/light
-URxvt*color5: #92659a
-URxvt*color13: #c19fbe
-! cyan dark/light
-URxvt*color6: #07c7ca
-URxvt*color14: #63e9e9
-! white dark/light
-URxvt*color7: #d3d7cf
-URxvt*color15: #eeeeec
+*cursorColor:   #cee318
+*background:    #1C1C1C
+*foreground:    #c5c5c5
 
-! ====================================
+! black
+*color0:        #1C1C1C
+*color8:        #666666
+! red
+*color1:        #ff005b
+*color9:        #ff00a0
+! green
+*color2:        #cee318
+*color10:       #ccff00
+! yellow
+*color3:        #ffe755
+*color11:       #ff9f00
+! blue
+*color4:        #048ac7
+*color12:       #48c6ff
+! magenta
+*color5:        #833c9f
+*color13:       #be67e1
+! cyan 
+*color6:        #0ac1cd
+*color14:       #63e7f0
+! white
+*color7:        #e5e5e5
 
-!enabling clickable links:
+
+! dimensions ==================
+URxvt*geometry: 	  95x25
+
+! enabling clickable links ====
 URxvt.urlLauncher:      /usr/bin/firefox
-URxvt.matcher.button:   1 
+URxvt.matcher.button:         1 
 
-! urxvt scrolling options and cursor style:
-URxvt*saveLines:       9000
-URxvt*scrollstyle:     plain
-URxvt*scrollBar:       false
-URxvt*cursorBlink:     true
-URxvt*cursorUnderline: true
-
-! urxvt tabs settings:
-URxvt.perl-ext-common:    default,tabbed,clipboard
-URxvt.tabbed.autohide:    no
-URxvt.tabbed.new-button:  yes
-URxvt.tabbed.title: 	  yes
-
-! text inactif + background
-URxvt.tabbed.tabbar-fg: 6
-URxvt.tabbed.tabbar-bg: 0
-
-! texte actif + background
-URxvt.tabbed.tab-fg:    11
-URxvt.tabbed.tab-bg:    0
+! scrolling and cursor ========
+URxvt*saveLines:           9000
+URxvt*scrollstyle:        plain
+URxvt*scrollBar:          false
+URxvt*cursorBlink:         true
+URxvt*cursorUnderline:    false
 
 ! Fausse transparence
-!URxvt.inheritPixmap: 	true
-!URxvt.tintColor: 	#2E3436
-URxvt.transparent:	true
-URxvt.shading:		30
+! URxvt.inheritPixmap: 	   true
+! URxvt.tintColor:	#2E3436
+URxvt.transparent:	   true
+URxvt.shading:		     30
 
-! Clipboard (selection = copy)
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
+! Clipboard : ALT+C / ALT+V ===
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+!# Options:
+!# URxvt.clipboard.autocopy: If true, PRIMARY overwrites clipboard
+
+!# You can also overwrite the system commands to use for copying/pasting.
+!# The default ones are:
+!# URxvt.clipboard.copycmd: xsel -ib
+!# URxvt.clipboard.pastecmd: xsel -ob
+!# If you prefer xclip, then put these lines in your .Xdefaults/.Xresources:
+!# URxvt.clipboard.copycmd: xclip -i -selection clipboard
+!# URxvt.clipboard.pastecmd: xclip -o -selection clipboard
+!# On Mac OS X, put these lines in your .Xdefaults/.Xresources:
+!# URxvt.clipboard.copycmd: pbcopy
+!# URxvt.clipboard.pastecmd: pbpaste
+
+!TABS =========================
+! URxvt.tabbed.autohide:    yes
+! URxvt.tabbed.new-button:  yes
+! URxvt.tabbed.title: 	    yes
+! text inactif + background
+! URxvt.tabbed.tabbar-fg:     6
+! URxvt.tabbed.tabbar-bg:     0
+! texte actif + background
+! URxvt.tabbed.tab-fg:       11
+! URxvt.tabbed.tab-bg:        0
+! Prise en charge des onglets ! shift+bas ou clic sur NEW= ouvrir nouvel onglet, 
+! shift + fleche gauche/droite=navigation dans les onglets. 
+! ctrl + fleche gauche/droite= deplacement onglet
+! ctrl+d ou taper exit = fermer onglet/terminal
+! urxvt tabs settings:
+! URxvt.perl-ext-common:  tabbed
