@@ -2,15 +2,14 @@ Various configuration files
 ---------------------------
 
 ####Xdefaults for URxvt:
-  Installation : apt-get install rxvt-unicode  
-  Files : .Xdefaults > ~/  
-  Perl scripts > /usr/lib/urxvt/perl/  
+    $ apt-get install rxvt-unicode  
+* Files : .Xdefaults > ~/  
+* Perl scripts > /usr/lib/urxvt/perl/  
 
 ####colors:
-  color schemes script for .Xdefaults  
-  Put somewhere in PATH  
+color schemes script for .Xdefaults. Put somewhere in PATH  
 
-#####.bashrc
+#####bashrc
   ~/.bashrc
 
 ####Conky:
