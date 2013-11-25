@@ -1,39 +1,49 @@
 URxvt.perl-ext-common: default,clipboard
 
-! Fonts =======================
+! Fonts 
 URxvt.font: xft:DejaVu Sans Mono:size=9
 URxvt.letterSpace: 	     -2
 
-! Colors ======================
+! Fausse transparence
+! URxvt.tintColor:	#fdf6e3	
+URxvt.transparent:	true
+URxvt.shading:	     	20
 
-*cursorColor:   #cee318
-*background:    #1C1C1C
-*foreground:    #c5c5c5
+! Solarized  ==================
+URxvt.intensityStyles: false
 
-! black
-*color0:        #1C1C1C
-*color8:        #666666
-! red
-*color1:        #ff005b
-*color9:        #ff00a0
-! green
-*color2:        #cee318
-*color10:       #ccff00
-! yellow
-*color3:        #ffe755
-*color11:       #ff9f00
-! blue
-*color4:        #048ac7
-*color12:       #48c6ff
-! magenta
-*color5:        #833c9f
-*color13:       #be67e1
-! cyan 
-*color6:        #0ac1cd
-*color14:       #63e7f0
-! white
-*color7:        #e5e5e5
+*background: #002b36
+*foreground: #657b83
+*fading: 40
+*fadeColor: #002b36
+*cursorColor: #93a1a1
+*pointerColorBackground:#586e75
+*pointerColorForeground:#93a1a1
 
+!! black dark/light
+*color0: #073642
+*color8: #002b36
+!! red dark/light
+*color1: #dc322f
+*color9: #cb4b16
+!! green dark/light
+*color2: #859900
+*color10: #586e75
+!! yellow dark/light
+*color3: #b58900
+*color11: #657b83
+!! blue dark/light
+*color4: #268bd2
+*color12: #839496
+!! magenta dark/light
+*color5: #d33682
+*color13: #6c71c4
+!! cyan dark/light
+*color6: #2aa198
+*color14: #93a1a1
+!! white dark/light
+*color7: #eee8d5
+*color15: #fdf6e3
 
 ! dimensions ==================
 URxvt*geometry: 	  95x25
@@ -49,44 +59,7 @@ URxvt*scrollBar:          false
 URxvt*cursorBlink:         true
 URxvt*cursorUnderline:    false
 
-! Fausse transparence
-! URxvt.inheritPixmap: 	   true
-! URxvt.tintColor:	#2E3436
-URxvt.transparent:	   true
-URxvt.shading:		     30
-
 ! Clipboard : ALT+C / ALT+V ===
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
-
-!# Options:
-!# URxvt.clipboard.autocopy: If true, PRIMARY overwrites clipboard
-
-!# You can also overwrite the system commands to use for copying/pasting.
-!# The default ones are:
-!# URxvt.clipboard.copycmd: xsel -ib
-!# URxvt.clipboard.pastecmd: xsel -ob
-!# If you prefer xclip, then put these lines in your .Xdefaults/.Xresources:
-!# URxvt.clipboard.copycmd: xclip -i -selection clipboard
-!# URxvt.clipboard.pastecmd: xclip -o -selection clipboard
-!# On Mac OS X, put these lines in your .Xdefaults/.Xresources:
-!# URxvt.clipboard.copycmd: pbcopy
-!# URxvt.clipboard.pastecmd: pbpaste
-
-!TABS =========================
-! URxvt.tabbed.autohide:    yes
-! URxvt.tabbed.new-button:  yes
-! URxvt.tabbed.title: 	    yes
-! text inactif + background
-! URxvt.tabbed.tabbar-fg:     6
-! URxvt.tabbed.tabbar-bg:     0
-! texte actif + background
-! URxvt.tabbed.tab-fg:       11
-! URxvt.tabbed.tab-bg:        0
-! Prise en charge des onglets ! shift+bas ou clic sur NEW= ouvrir nouvel onglet, 
-! shift + fleche gauche/droite=navigation dans les onglets. 
-! ctrl + fleche gauche/droite= deplacement onglet
-! ctrl+d ou taper exit = fermer onglet/terminal
-! urxvt tabs settings:
-! URxvt.perl-ext-common:  tabbed
