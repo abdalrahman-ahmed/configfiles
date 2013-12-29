@@ -20,3 +20,6 @@ color schemes script for .Xdefaults. Put somewhere in PATH
 
 ####Fonts configuration
   ~/.config/fontconfig/.fonts.conf
+
+####Some Code
+3873B270B0D734ED9C6C549E01
